@@ -3,6 +3,8 @@
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -13,12 +15,18 @@ header{
     background-image: url(./images/background1.png);
     background-position: center;
     background-size: cover;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 0 0 30px #3186af;
 }
 
 .Logo{
-    display: inline;
     width: 300px;
-    height: 170px;
+    height: 190px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-image: url(./images/logo.png);
     background-position: left;
     background-size: cover;
@@ -28,13 +36,12 @@ header{
 nav{
     background-color: #000;
     display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    align-content: center;
-    box-shadow: 0 0 10% #00add7;
-    border: 2px solid #00add7;
+    border-radius: 0px;
+    box-shadow: 0 0 30px #3186af;
+    border: 2px solid #3186af;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 header li
@@ -57,9 +64,27 @@ header li a:hover
 }
 
 .btn{
-    margin: auto;
     padding: auto;
+    margin: auto;
     box-shadow: 0 0 2px #00add7;
     border: 1px solid #00add7;
-    background-image: linear-gradient(#);
+}
+
+
+
+
+
+
+
+
+
+footer
+{
+  background-color: #070707;
+  padding: 20px;
+  margin: 0;
+  box-shadow: 0 0 20px #00add7;
+  border: 2px solid #00add7;
+  justify-content: center;
+  color: #c8c6c2
 }
