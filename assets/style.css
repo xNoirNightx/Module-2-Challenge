@@ -20,7 +20,7 @@ header{
     padding-right: 2%;
 }
 
-.Logo{
+ .Logo{
     width: 300px;
     height: 190px;
     padding-top: 5%;
@@ -69,10 +69,57 @@ header li a:hover
     border: 1px solid #00add7;
 }
 
+.main{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.aboutmeimg{
+    padding: auto;
+    width: auto;
+    height: auto;
+    background-color: #000;
+    border-radius: 0;
+    border: 3px solid #00add7;
+    box-shadow: 0 0 30px #00add7;
+}
 
+.aboutmetext{
+    width: 500px;
+    color: #faf7f7;
+    text-align: center;
+}
 
+.flexcontainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000;
+    height: 50px;
+    align-content: space-between;
+}
 
+.flexcontainer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000;
+    height: 50px;
+    align-content: space-between;
+
+}
+.flexcontainer3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000;
+    height: 50px;
+    align-content: space-between;
+}
 
 
 
