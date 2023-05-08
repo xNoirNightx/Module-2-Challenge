@@ -11,7 +11,7 @@
 
 header{
     width: 100%;
-    height: 100vh;
+
     background-image: url(./images/background1.png);
     background-position: center;
     background-size: cover;
@@ -19,6 +19,8 @@ header{
     padding-left: 2%;
     padding-right: 2%;
 }
+
+
 
  .Logo{
     width: 300px;
@@ -29,8 +31,9 @@ header{
     background-image: url(./images/logo.png);
     background-position: left;
     background-size: cover;
-
 }
+
+
 
 nav{
     background-color: #000;
@@ -43,24 +46,31 @@ nav{
     border: 3px solid #00add7;
 }
 
-header li
-{
+
+
+
+header li{
   display: inline;
   padding-left: 50px;
 }
 
-header li a
-{
+
+
+
+header li a{
   color:#c8c6c2;
   text-decoration: none;
   padding: 10px;
   transition: 3s ease;
 }
 
-header li a:hover
-{
+
+
+header li a:hover{
   color: #bf96d8;
 }
+
+
 
 .btn{
     padding: auto;
@@ -68,6 +78,8 @@ header li a:hover
     box-shadow: 0 0 2px #00add7;
     border: 1px solid #00add7;
 }
+
+
 
 .main{
     display: flex;
@@ -78,15 +90,21 @@ header li a:hover
     align-items: center;
 }
 
+
+
 .aboutmeimg{
+    display: flex;
     padding: auto;
-    width: auto;
     height: auto;
+    width: auto;
+    margin-top: 20px;
     background-color: #000;
-    border-radius: 0;
+    border-radius: 50%;
     border: 3px solid #00add7;
     box-shadow: 0 0 30px #00add7;
 }
+
+
 
 .aboutmetext{
     width: 500px;
@@ -94,38 +112,69 @@ header li a:hover
     text-align: center;
 }
 
+
+
+.projects{
+    display: flex;
+    margin-top: 20px;
+    color: #00add7;
+}
+
+
+
 .flexcontainer1{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     background-color: #000;
-    height: 50px;
+    height: 250px;
+    width: 350px;
+    margin: auto;
     align-content: space-between;
+    border: 3px solid #00add7;
+    box-shadow: 0 0 30px #00add7;
 }
+
+
 
 .flexcontainer2{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     background-color: #000;
-    height: 50px;
+    height: 350px;
+    width: 450px;
+    margin: auto;
     align-content: space-between;
-
+    border: 3px solid #00add7;
+    box-shadow: 0 0 30px #00add7;
 }
+
+
 .flexcontainer3{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     background-color: #000;
-    height: 50px;
+    height: 250px;
+    width: 350px;
+    margin: auto;
     align-content: space-between;
+    border: 3px solid #00add7;
+    box-shadow: 0 0 30px #00add7;
 }
 
 
+.skills{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    margin-top: 20px;
+    color: #00add7;
+    align-content: space-between;
+    border: 3px solid #00add7;
+    box-shadow: 0 0 30px #00add7;
+}
 
 
-footer
-{
+footer{
   background-color: #070707;
   padding: 20px;
   margin: 0;
@@ -134,3 +183,7 @@ footer
   justify-content: center;
   color: #c8c6c2
 }
+
+@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 768px) }
