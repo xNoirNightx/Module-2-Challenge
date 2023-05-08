@@ -122,7 +122,7 @@ header li a:hover{
 
 
 
-.flexcontainer1{
+.flexcontainer{
     display: flex;
     justify-content: center;
     background-color: #000;
@@ -132,34 +132,9 @@ header li a:hover{
     align-content: space-between;
     border: 3px solid #00add7;
     box-shadow: 0 0 30px #00add7;
+    background-image: linear-gradient(#000,#00add7,#000);
 }
 
-
-
-.flexcontainer2{
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-    height: 350px;
-    width: 450px;
-    margin: auto;
-    align-content: space-between;
-    border: 3px solid #00add7;
-    box-shadow: 0 0 30px #00add7;
-}
-
-
-.flexcontainer3{
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-    height: 250px;
-    width: 350px;
-    margin: auto;
-    align-content: space-between;
-    border: 3px solid #00add7;
-    box-shadow: 0 0 30px #00add7;
-}
 
 
 .skills{
