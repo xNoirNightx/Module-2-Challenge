@@ -10,3 +10,58 @@
  scroll-behavior: smooth;
 font-family:'Karla', sans-serif;
 }
+
+/* learning to save root content with var options  **NOTE** find better font */
+
+:root {
+    --bg-color: #000;
+    ---first-bg-color: #30126c;
+    --text-color: #fff;
+    --main-color: #3186af;
+}
+html{
+    font-size: 70%;
+    overflow: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 2rem 10%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: var(--bg-color);
+}
+
+/* nav bar content **NOTE** text colour isnt working from root  */
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+.navbar {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: left;
+    transition: 3s ease;
+}
+.navbar a:hover,
+.navbar a.active {
+color:var(--main-color)
+}
+
+/* how to make it only show up for mobile users ????? */
+#dropdown {
+    font-size: 4rem;
+    color: var(--text-color);
+    display: none;
+}
