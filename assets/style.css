@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
     justify-content: center;
     text-align: center;
@@ -31,11 +31,13 @@ header{
 }
 
 
+/*Navigation*/
 
 nav{
     background-color: #000;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     border-radius: 0px;
     padding-top: 2%;
     padding-left: 2%;
@@ -43,46 +45,23 @@ nav{
     box-shadow: 0 0 30px #00add7;
     border: 3px solid #00add7;
 }
-
-
-
-
 header li{
   display: inline;
   padding-left: 50px;
 }
-
-
-
-
 header li a{
   color:#c8c6c2;
   text-decoration: none;
   padding: 10px;
   transition: 3s ease;
 }
-
-
-
 header li a:hover{
   color: #bf96d8;
 }
 
 
-
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px;
-    margin: auto;
-    max-width: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-
-.aboutmeimg{
+/*box1*/
+#aboutmeimg{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -91,9 +70,6 @@ header li a:hover{
     border: 3px solid #00add7;
     box-shadow: 0 0 30px #00add7;
 }
-
-
-
 .aboutmetext{
     width: 500px;
     color: #faf7f7;
@@ -103,22 +79,31 @@ header li a:hover{
 }
 
 
+/*Project Grid*/
 
-.projects1{
+#Projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    color: #faf7f7;
+    justify-content: center;
+    background-color: #000;
+    align-content: center;
+    align-items: center;
+}
+
+#projects1{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     color: #00add7;
 }
-
-.projects2{
+#projects2{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     color: #00add7;
 }
-
-
 .flexcontainer{
     display: flex;
     justify-content: center;
@@ -133,6 +118,7 @@ header li a:hover{
 }
 
 
+/*Skillbox*/
 
 .skills{
     display: flex;
@@ -145,6 +131,8 @@ header li a:hover{
 }
 
 
+/*BottomBar*/
+
 footer{
   background-color: #070707;
   padding: 20px;
@@ -154,6 +142,9 @@ footer{
   color: #c8c6c2
 }
 
-@media only screen and (min-width: 600px) {
 
-@media only screen and (min-width: 768px) }
+/*Device Screen Sizes */
+
+@media screen and (min-width: 600px){}
+@media screen and (min-width: 768px){}
+@media screen and (max-width: 992px){}
