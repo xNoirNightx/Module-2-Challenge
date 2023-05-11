@@ -289,21 +289,52 @@ box-shadow: 0 0 30px var(---main-color);
 }
 
 /* updated contact box , NOTE add javascript? , and relink socials */
+.contact h2{
+    margin-bottom: 3rem;
+}
+.csocials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 3px solid var(---main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(---main-color);
+    margin: 3rem 2rem 3rem 0;
+    transition: 3s ease;
+    }
+    
+    .csocials a:hover {
+        color: var(---first-bg-color);
+        background: var(---main-color);
+        box-shadow: 0 0 30px var(--main-color);
+    }
 
+    .contact form {
+       max-width: 80rem; 
+       margin: auto;
+       margin-bottom: auto;
+       text-align: center;
+    }
 
+    .contact form .messagebox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .contact form .messagebox input,
+    .contact form textarea {
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.5rem;
+        margin: .6rem 0;
+        color: var(--text-color);
+        background: var(---main-color);
+    }
 
 
 
