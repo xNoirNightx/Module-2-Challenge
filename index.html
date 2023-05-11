@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8acb0880f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   
+
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-
-        <i class="fa-solid fa-bars" id="dropdown"></i>
-
         <nav class="navbar">
             <a href="#intro" class="active">Intro</a>
             <a href="#aboutme">About Me</a>
@@ -28,159 +27,173 @@
     </header>
 
     <!-- how to add coloured moving text as seen on awwwwwards? span ?-->
-<section class="intro" id="intro">
-    <div class="introtext">
-        <h3>Hello, My name is
-            <h1>Coral</h1>
-            <h3>And I'm a <span>Full Stack Web Developer Student</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Praesent faucibus posuere luctus. Cras feugiat est quis metus 
+    <section class="intro" id="intro">
+        <div class="introtext">
+            <h3>Hello, My name is
+                <h1>Coral</h1>
+                <h3>And I'm a <span>Full Stack Web Developer Student</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Praesent faucibus posuere luctus. Cras feugiat est quis metus
+                    feugiat condimentum.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="#" class="btn">Download Resume</a>
+        </div>
+
+        <div class="introimg">
+            <img src="./assets/images/coral.png" alt="">
+        </div>
+    </section>
+
+    <!-- note need a different image *placeholder* ?-->
+    <section class="aboutme" id="aboutme">
+        <div class="aboutmeimg"></div>
+        <img src="./assets/images/coral.png" alt="">
+        </div>
+        <div class="aboutmetext">
+            <h2 class="title">About <span>Coral</span></h2>
+            <h3>Full Stack Web Developer Student</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Praesent faucibus posuere luctus. Cras feugiat est quis metus
                 feugiat condimentum.</p>
-    <div class="socials">
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-solid fa-envelope"></i></a>
-    </div> 
-    <a href="#" class="btn">Download Resume</a>           
-    </div>
-
-<div class="introimg">
-    <img src="./assets/images/coral.png" alt="">
-</div>
-</section>
-
-<!-- note need a different image *placeholder* ?-->
-<section class="aboutme" id="aboutme">
-    <div class="aboutmeimg"></div>
-      <img src="./assets/images/coral.png" alt="">
-</div>
-<div class="aboutmetext">
-    <h2 class="title">About <span>Coral</span></h2>
-    <h3>Full Stack Web Developer Student</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur 
-        adipiscing elit. Praesent faucibus posuere luctus. Cras feugiat est quis metus 
-        feugiat condimentum.</p>
-</div>
-</section>
-
-<section class="skills" id="skills">
-    <h2 class="title">My<span>Skills</span></h2>  
-    <div class="container">
-        <div class="skillbox">
-        <i class="fa-solid fa-code"></i>
-        <h3>HTML</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. </p>
-            <a href="#" class="btn">Placeholder</a>
         </div>
-    </div>
-    <div class="container">
-         <div class="skillbox">
-        <i class='fa-solid fa-file-code'></i>
-        <h3>CSS</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur 
-          adipiscing elit. </p>
-         <a href="#" class="btn">Placeholder</a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="skillbox">
-        <i class="fa-brands fa-java"></i>
-        <h3>JavaScript</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-        adipiscing elit. </p>
-        <a href="#" class="btn">Placeholder</a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- NOTE images need to direct to github projects (add btn or clickable img ) 
+    <section class="skills" id="skills">
+        <h2 class="title">My <span>Skills</span></h2>
+        <div class="container">
+            <div class="skillbox">
+                <i class="fa-solid fa-code"></i>
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. </p>
+                <a href="#" class="btn">Placeholder</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="skillbox">
+                <i class='fa-solid fa-file-code'></i>
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. </p>
+                <a href="#" class="btn">Placeholder</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="skillbox">
+                <i class="fa-brands fa-java"></i>
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. </p>
+                <a href="#" class="btn">Placeholder</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTE images need to direct to github projects (add btn or clickable img ) 
 ERROR - cant make layer fade work???? -->
-<section class="projects" id="projects">
-    <h2 class="title">Live<span>Projects</span></h2>
 
-    <div class="pcontainer">
-        <div class="projectbox"></div>
-        <img src="./assets/images/miniproject.png" alt="">
-        <div class="player">
-            <h4>First Webpage</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-        </div>
-    </div>
-    <div class="pcontainer">
-        <div class="projectbox"></div>
-        <img src="./assets/images/miniproject.png" alt="">
-        <div class="player">
-            <h4>First Webpage</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-        </div>
-    </div>
-    <div class="pcontainer">
-        <div class="projectbox"></div>
-        <img src="./assets/images/miniproject.png" alt="">
-        <div class="player">
-            <h4>First Webpage</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-        </div>
-    </div>
-    <div class="pcontainer">
-        <div class="projectbox"></div>
-        <img src="./assets/images/miniproject.png" alt="">
-        <div class="player">
-            <h4>First Webpage</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-        </div>
-    </div>
-    <div class="pcontainer">
-        <div class="projectbox"></div>
-        <img src="./assets/images/miniproject.png" alt="">
-        <div class="player">
-            <h4>First Webpage</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+    <section class="liveprojects" id="projects">
+            <h2 class="title">Live <span>Projects</span></h2>
+        
+        <section class="projects">
+            <div class="pcontainer">
+                <div class="projectbox"></div>
+                <img src="./assets/images/miniproject.png" alt="">
+                <div class="player">
+                    <h4>First Webpage</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
-        </div>
-
-    <div class="pcontainer">
-        <div class="projectbox"></div>
-        <img src="./assets/images/miniproject.png" alt="">
-        <div class="player">
-            <h4>First Webpage</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit.</p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+            <div class="pcontainer">
+                <div class="projectbox"></div>
+                <img src="./assets/images/miniproject.png" alt="">
+                <div class="player">
+                    <h4>First Webpage</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
-        </div>
-</section>
+            <div class="pcontainer">
+                <div class="projectbox"></div>
+                <img src="./assets/images/miniproject.png" alt="">
+                <div class="player">
+                    <h4>First Webpage</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="pcontainer">
+                <div class="projectbox"></div>
+                <img src="./assets/images/miniproject.png" alt="">
+                <div class="player">
+                    <h4>First Webpage</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="pcontainer">
+                <div class="projectbox"></div>
+                <img src="./assets/images/miniproject.png" alt="">
+                <div class="player">
+                    <h4>First Webpage</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
 
-<!-- contact bar isnt alined , something in my html or css is messing up the layout ?-->
-<section class="contact" id="contact">
-    <h2 class="title">Contact<span>Me</span></h2>
-    <div class="csocials">
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-solid fa-envelope"></i></a>
-    </div> 
-    <form action="#">
-     <div class="messagebox">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-     </div>
-     <textarea name="" id="" cols="30" rows="10" placeholder="Type Message Here"></textarea>
-    <input type="Submit" value="Send Message" class="btn">
-    </form>
-</section>
+            <div class="pcontainer">
+                <div class="projectbox"></div>
+                <img src="./assets/images/miniproject.png" alt="">
+                <div class="player">
+                    <h4>First Webpage</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- contact bar isnt alined , something in my html or css is messing up the layout ?-->
+    <section class="contact" id="contactme">
+        <h2 class="title">Contact <span>Me</span></h2>
+        <div class="csocials">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <form action="#">
+            <div class="messagebox">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Type Message Here"></textarea>
+            <input type="Submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footertext">
+            <p> Copyright 2023 Coral's Portfolio </p>
+        </div>
+    </footer>
+
+    <!-- scroll in text-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="./assets/script.js"></script>
 
 </body>
+
 </html>

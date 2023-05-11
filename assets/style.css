@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap');
 
-*{
- padding: 0;
- margin: 0;
- box-sizing: border-box;
- border: none;
- outline: none;
- text-decoration: none;
- scroll-behavior: smooth;
- font-family:'Karla', sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Karla', sans-serif;
 }
 
 
@@ -16,31 +16,34 @@
 /* learning to save root content with var options  **NOTE** find better font */
 :root {
     --bg-color: #000000;
-    ---first-bg-color: #bf96d8;
+    ---first-bg-color: #333233;
     --text-color: #fff;
     ---main-color: #3186af;
 }
-html{
+
+html {
     font-size: 70%;
-    overflow: hidden;
+    overflow: scroll;
 }
-body{
+
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
-section{
-    min-height: 100vh;
-    padding: 10rem 10% 2rem;
+
+section {
+    /* min-height: 100vh; */
+    padding: 5rem 10% 2rem;
 }
+
 .header {
     display: flex;
-    position: fixed;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     padding: 2rem 10%;
     top: 0;
     left: 0;
-    z-index: 100;
-    justify-content: space-between;
     align-items: center;
     background: var(---main-color);
 }
@@ -49,27 +52,30 @@ section{
 
 /* nav bar content **NOTE** text colour isnt working from root  */
 .logo {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 5rem;
+    font-weight: 700;
     color: var(--text-color);
     cursor: default;
 }
+
 .navbar {
-    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    font-size: 1.8rem;
+    
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: var(--text-color);
-    margin-left: left;
     transition: 3s ease;
 }
 .navbar a:hover,
 .navbar a.active {
-color:var(--main-color)
+    color: var(--main-color)
 }
-
-/* how to make it only show up for mobile users ????? */
-#dropdown {
-    font-size: 4rem;
-    color: var(--text-color);
-    display: none;
+.navbar a{
+    padding: 10px;
 }
 
 
@@ -80,48 +86,53 @@ color:var(--main-color)
     align-items: center;
     justify-content: center;
 }
+
 .intro img {
- border-radius: 50%;
- box-shadow: 0 0 30px var(---main-color);
- border: 3px solid var(---main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 30px var(---main-color);
+    border: 3px solid var(---main-color);
 }
+
 .introtext h3 {
     font-size: 3.5rem;
     font-weight: 700;
 }
-.introtext h3:nth-last-of-type(2){ 
+
+.introtext h3:nth-last-of-type(2) {
     margin-bottom: 2rem;
 }
-span{
+
+span {
     color: var(---main-color);
-    text-shadow:0 0 30px var(---main-color);
+    text-shadow: 0 0 30px var(---main-color);
 }
+
 .introtext h1 {
     font-size: 5.8rem;
     font-weight: 700;
     line-height: 1.5;
 }
+
 .introtext p {
     font-size: 1.6rem;
 }
 
 
 
-
 /* free icons from fontawesome ***NOTE** images arnt linking ? */
 .socials a {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-width: 5rem;
-height: 5rem;
-background: transparent;
-border: 3px solid var(---main-color);
-border-radius: 50%;
-font-size: 2rem;
-color: var(---main-color);
-margin: 3rem 2rem 3rem 0;
-transition: 3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 3px solid var(---main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(---main-color);
+    margin: 3rem 2rem 3rem 0;
+    transition: 3s ease;
 }
 
 .socials a:hover {
@@ -139,13 +150,14 @@ transition: 3s ease;
     letter-spacing: .1rem;
     font-size: 1.8rem;
     font-weight: 700;
-    color:var(---first-bg-color);
+    color: var(---first-bg-color);
     transition: 2s ease;
-
 }
-.btn a:hover{
+
+.btn a:hover {
     box-shadow: none;
 }
+
 
 
 /* about me section **NOTE** add fun icons later w/ matching blue border glow  */
@@ -154,29 +166,40 @@ transition: 3s ease;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    background-color: var(--bg-color)
+    width: auto;
+    background-image: url(./images/background1.png);
+    background-position: center;
+    background-size: cover;
 }
-.aboutmeimg img{
+
+.aboutmeimg img {
     opacity: 0.7;
     border-radius: 50%;
     box-shadow: 0 0 30px var(---main-color);
     border: 3px solid var(---main-color);
 }
+
 .title {
     text-align: center;
     font-size: 5rem;
     font-weight: 700;
 }
+
 .aboutmetext h2 {
     text-align: center;
     line-height: 2.0;
+    background: var(--bg-color);
 }
+
 .aboutmetext h3 {
     font-size: 3.5rem;
+    background: var(--bg-color);
 }
+
 .aboutmetext p {
-   font-size: 1.6rem;
-   margin: 2rem 0 3rem;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    background: var(--bg-color);
 }
 
 
@@ -184,70 +207,91 @@ transition: 3s ease;
 /* skills NOTE combine coding to one box , add extra content after course 
  ERROR - fixed boxes stacked , now need row ??? */
 .skills h2 {
-    margin-bottom: 55px;
+    margin-bottom: 5rem;
 }
+
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
     box-shadow: 0 0 30px var(---main-color);
     background: var(---main-color);
+    margin: 35px;
+
 }
+
 .container .skillbox {
-flex: 1 1 3rem;
-background: linear-gradient(#3186af,#000000);
-border: .3rem solid var(--text-color);
-padding: 3rem 2rem 4rem;
-text-align: center;
-transition: 3s ease;
+    flex: 1 1 3rem;
+    background: linear-gradient(#3186af, #000000);
+    border: .3rem solid var(--text-color);
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    transition: 3s ease;
 }
-.container .skillbox{
+
+.container .skillbox {
     border-color: var(---main-color);
     transform: scale(1);
 }
+
 .skillbox i {
-  font-size: 10rem;  
-  color: var(--bg-color);
+    font-size: 10rem;
+    color: var(--bg-color);
 }
+
 .skillbox h3 {
     font-size: 2.5rem;
 }
+
 .skillbox p {
-font-size: 1.5rem;
-margin: 1rem 0 3rem;
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
 }
 
 
 /* projects , add and remove as needed for future , *see html note* */
-.projects{
-    background: var(--bg-color)
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
-.projects h2{
-    margin-bottom: 3rem;
+
+.liveprojects {
+    background-image: url(./images/background1.png);
+    background-position: center;
+    background-size: cover;
 }
-.pcontainer{
+.projects h2 {
+    margin-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.pcontainer {
+    display: flex;
     display: grid;
     flex-wrap: wrap;
-    grid-template-columns:repeat(3,1fr);
     align-items: center;
-    gap: 2.0rem;
 }
-.pcontainer .projectbox{
-display: flex;
-position: relative;
-overflow: hidden;
-border-radius: 0;
-box-shadow: 0 0 30px var(---main-color);
+
+.pcontainer .projectbox {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: 0 0 30px var(---main-color);
 }
+
 .projectbox img {
     width: 100%;
     transition: 4s ease;
 }
-.projectbox:hover img{
+
+.projectbox:hover img {
     transform: scale(1.1);
 }
+
 .projectbox .player {
     position: absolute;
     display: flex;
@@ -257,24 +301,28 @@ box-shadow: 0 0 30px var(---main-color);
     height: 100%;
     left: 0;
     right: 0;
-    background: linear-gradient(rgba(0,0,0,1), var(---main-color));
+    background: linear-gradient(rgba(0, 0, 0, 1), var(---main-color));
     align-items: center;
     text-align: center;
     padding: 0 5rem;
     transform: translateY(100%);
-   transition: 4s ease;
+    transition: 4s ease;
 }
+
 .projectbox:hover .player {
     transform: translateY(0);
 }
-.player h4{
+
+.player h4 {
     font-size: 2.5rem;
 }
+
 .player p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
-.player a{
+
+.player a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -283,15 +331,18 @@ box-shadow: 0 0 30px var(---main-color);
     border-radius: 50%;
     background: var(--text-color);
 }
+
 .player a i {
     font-size: 2rem;
     color: var(---main-color);
 }
 
+
 /* updated contact box , NOTE add javascript? , and relink socials */
-.contact h2{
+.contact h2 {
     margin-bottom: 3rem;
 }
+
 .csocials a {
     display: inline-flex;
     align-items: center;
@@ -305,43 +356,68 @@ box-shadow: 0 0 30px var(---main-color);
     color: var(---main-color);
     margin: 3rem 2rem 3rem 0;
     transition: 3s ease;
-    }
-    
-    .csocials a:hover {
-        color: var(---first-bg-color);
-        background: var(---main-color);
-        box-shadow: 0 0 30px var(--main-color);
-    }
+}
 
-    .contact form {
-       max-width: 80rem; 
-       margin: auto;
-       margin-bottom: auto;
-       text-align: center;
-    }
+.csocials a:hover {
+    color: var(---first-bg-color);
+    background: var(---main-color);
+    box-shadow: 0 0 30px var(--main-color);
+}
 
-    .contact form .messagebox{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.contact form {
+    max-width: 80rem;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
 
-    .contact form .messagebox input,
-    .contact form textarea {
-        width: 100%;
-        padding: 2rem;
-        font-size: 1.5rem;
-        margin: .6rem 0;
-        color: var(--text-color);
-        background: var(---main-color);
-    }
+.contact form .messagebox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form .messagebox input,
+.contact form textarea {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin: .6rem 0;
+    color: var(--text-color);
+    background: var(---main-color);
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* footer , add icons ? cat ? */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background: var(---main-color);
+    box-shadow: 0 0 30px var(---main-color);
+    border: 3px solid var(---main-color);
+}
+
+.footertext p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
 
 
+/*Device Screen Sizes */
 
+@media screen and (min-width: 600px) {}
 
+@media screen and (min-width: 768px) {}
 
-
-
-
-
-
+@media screen and (max-width: 992px) {}
