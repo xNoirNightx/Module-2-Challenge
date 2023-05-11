@@ -168,7 +168,7 @@ transition: 3s ease;
     font-weight: 700;
 }
 .aboutmetext h2 {
-    text-align: right;
+    text-align: center;
     line-height: 2.0;
 }
 .aboutmetext h3 {
@@ -179,25 +179,46 @@ transition: 3s ease;
    margin: 2rem 0 3rem;
 }
 
+
+
 /* skills NOTE combine coding to one box , add extra content after course */
 .skills h2 {
     margin-bottom: 5rem;
 }
-.skillbox {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    box-shadow: 0 0 30px var(---main-color);
+    background: var(---main-color);
 }
-.skills .skillbox {
-flex: 1 1 30rem;
+.container .skillbox {
+flex: 1 1 3rem;
 background: linear-gradient(#3186af,#000000);
+border: .3rem solid var(--text-color);
 padding: 3rem 2rem 4rem;
-border-radius: 2rem;
 text-align: center;
+transition: 3s ease;
 }
 
+.container .skillbox{
+    border-color: var(---main-color);
+    transform: scale(1);
+
+}
+.skillbox i {
+  font-size: 10rem;  
+  color: var(--bg-color);
+}
+.skillbox h3 {
+    font-size: 2.5rem;
+}
+.skillbox p {
+font-size: 1.5rem;
+margin: 1rem 0 3rem;
+}
 
 
 
