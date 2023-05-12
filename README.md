@@ -44,21 +44,20 @@ working JavaScript would be nice too.
 
 The following image shows the web application after I edited the code.
 
-![Corals Portfolio.](./assets/images/Corals%20Desktop%20Screenshot.jpeg)
+![Corals Portfolio.](./assets/images/portfolio.png)
 
 > **Note**: This layout image is screen shot from a desktop computers web browser. It displays differently vs on Vscode.
 
 
 ## Credits
 
-https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw
-https://www.w3schools.com/
-https://scrollrevealjs.org/
-
+- https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw
+- https://www.w3schools.com/
+- https://scrollrevealjs.org/
 
 ## Layout Inspiration 
 
-https://hluebbering.github.io/
+- https://hluebbering.github.io/
 
 > **Note**: User story and acceptance criteria was provided to me in class
  UNB-VIRT-FSF-PT-04-2023-U-LOLC for Week 2 Challenge. I was given the website www.awwwards.com for inspiration of what professional portfolios could look like. 
@@ -66,7 +65,7 @@ https://hluebbering.github.io/
 
 ## My Githubs
 
-https://xnoirnightx.github.io/Module-1-Challenge/
+- https://xnoirnightx.github.io/Module-2-Challenge/
 
 ## License
 
