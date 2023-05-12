@@ -79,11 +79,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(#000000,#333233,#000000 );
 }
 .intro img {
     border-radius: 50%;
     box-shadow: 0 0 30px var(---main-color);
     border: 3px solid var(---main-color);
+    
 }
 .introtext h3 {
     font-size: 3.5rem;
@@ -95,6 +97,7 @@ section {
 span {
     color: var(---main-color);
     text-shadow: 0 0 30px var(---main-color);
+    padding-right: 40px;
 }
 .introtext h1 {
     font-size: 5.8rem;
@@ -103,7 +106,7 @@ span {
 }
 .introtext p {
     font-size: 1.6rem;
-    padding right: 5rem;
+    padding-right: 5rem;
 }
 
 
@@ -161,8 +164,8 @@ span {
     display: flex;
     flex-wrap: wrap;
     border-radius: 50%;
-    box-shadow: 0 0 40px var(---main-color);
-    border: 3px solid var(---main-color);
+    box-shadow: 0 0 40px #bf96d8;
+    border: 3px solid  #bf96d8;
 }
 .title {
     text-align: center;
@@ -187,16 +190,28 @@ span {
 
 
 
-/* Skills ( condense/add more )  **ERROR** boxes should be side by side , not working */
+/* Skills ( condense/add more )  **ERROR** "myskills" wont stay above boxes */
 .skills h2 {
+    flex-wrap: wrap;
     margin-bottom: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+    text-align: center;
+}
+.skills{
+    text-align: center;
+    display:flex;
+    align-content: space-between;
+    justify-content: space-around;
+    background: linear-gradient(#000000,#333233,#000000 );
 }
 .container {
     display: flex;
-    align-items: center;
+    align-items: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    box-shadow: 0 0 30px var(---main-color);
+    box-shadow: 0 0 40px var(---main-color);
     background: var(---main-color);
     margin: 35px;
 }
@@ -267,12 +282,12 @@ span {
     height: 100%;
     bottom: 0;
     left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 1), #3186af ,#000000,#3186af );
+    background: linear-gradient(#3186af ,#000000,#3186af );
     align-items: center;
     text-align: center;
     padding: 0 5rem;
     transform: translateY(100%);
-    transition: 4s ease;
+    transition: 2s ease;
     
 
 }
@@ -284,7 +299,8 @@ span {
 }
 .player p {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    color: #d12929;
 }
 .player a {
     display: inline-flex;
@@ -302,8 +318,15 @@ span {
 
 
 /* updated contact box , NOTE add javascript? , and relink socials */
+.contact{
+    background: linear-gradient(#000000,#333233,#000000 );
+}
 .contact h2 {
     margin-bottom: 3rem;
+    
+}
+.csocials{
+    padding-left: 34rem;
 }
 .csocials a {
     display: inline-flex;
@@ -329,6 +352,7 @@ span {
     margin: auto;
     margin-bottom: auto;
     text-align: center;
+    
 }
 .contact form .messagebox {
     display: flex;
@@ -366,7 +390,7 @@ footer {
 .footertext p {
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding-left: 37rem;
     font-size: 1.5rem;
 }
 

@@ -53,6 +53,7 @@ The following image shows the web application after I edited the code.
 
 https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw
 https://www.w3schools.com/
+https://scrollrevealjs.org/
 
 
 ## Layout Inspiration 
