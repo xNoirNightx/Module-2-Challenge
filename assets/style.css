@@ -20,22 +20,18 @@
     --text-color: #fff;
     ---main-color: #3186af;
 }
-
 html {
     font-size: 70%;
     overflow: scroll;
 }
-
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
-
 section {
-    /* min-height: 100vh; */
+    /* min-height: 70vh; */
     padding: 5rem 10% 2rem;
 }
-
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -57,25 +53,23 @@ section {
     color: var(--text-color);
     cursor: default;
 }
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
     font-size: 1.8rem;
-    
     padding-top: 2%;
     padding-left: 2%;
     padding-right: 2%;
-    color: var(--text-color);
+    color: var(---first-bg-color);
     transition: 3s ease;
-}
-.navbar a:hover,
-.navbar a.active {
-    color: var(--main-color)
 }
 .navbar a{
     padding: 10px;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: var(--text-color);
 }
 
 
@@ -86,35 +80,30 @@ section {
     align-items: center;
     justify-content: center;
 }
-
 .intro img {
     border-radius: 50%;
     box-shadow: 0 0 30px var(---main-color);
     border: 3px solid var(---main-color);
 }
-
 .introtext h3 {
     font-size: 3.5rem;
     font-weight: 700;
 }
-
 .introtext h3:nth-last-of-type(2) {
     margin-bottom: 2rem;
 }
-
 span {
     color: var(---main-color);
     text-shadow: 0 0 30px var(---main-color);
 }
-
 .introtext h1 {
     font-size: 5.8rem;
     font-weight: 700;
     line-height: 1.5;
 }
-
 .introtext p {
     font-size: 1.6rem;
+    padding right: 5rem;
 }
 
 
@@ -134,13 +123,11 @@ span {
     margin: 3rem 2rem 3rem 0;
     transition: 3s ease;
 }
-
 .socials a:hover {
     color: var(---first-bg-color);
     background: var(---main-color);
     box-shadow: 0 0 30px var(--main-color);
 }
-
 .btn {
     display: inline-block;
     padding: 2rem 3rem;
@@ -153,7 +140,6 @@ span {
     color: var(---first-bg-color);
     transition: 2s ease;
 }
-
 .btn a:hover {
     box-shadow: none;
 }
@@ -171,31 +157,27 @@ span {
     background-position: center;
     background-size: cover;
 }
-
 .aboutmeimg img {
-    opacity: 0.7;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 50%;
-    box-shadow: 0 0 30px var(---main-color);
+    box-shadow: 0 0 40px var(---main-color);
     border: 3px solid var(---main-color);
 }
-
 .title {
     text-align: center;
     font-size: 5rem;
     font-weight: 700;
 }
-
 .aboutmetext h2 {
     text-align: center;
     line-height: 2.0;
     background: var(--bg-color);
 }
-
 .aboutmetext h3 {
     font-size: 3.5rem;
     background: var(--bg-color);
 }
-
 .aboutmetext p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
@@ -209,7 +191,6 @@ span {
 .skills h2 {
     margin-bottom: 5rem;
 }
-
 .container {
     display: flex;
     align-items: center;
@@ -220,7 +201,6 @@ span {
     margin: 35px;
 
 }
-
 .container .skillbox {
     flex: 1 1 3rem;
     background: linear-gradient(#3186af, #000000);
@@ -229,21 +209,17 @@ span {
     text-align: center;
     transition: 3s ease;
 }
-
 .container .skillbox {
     border-color: var(---main-color);
     transform: scale(1);
 }
-
 .skillbox i {
     font-size: 10rem;
     color: var(--bg-color);
 }
-
 .skillbox h3 {
     font-size: 2.5rem;
 }
-
 .skillbox p {
     font-size: 1.5rem;
     margin: 1rem 0 3rem;
@@ -252,86 +228,74 @@ span {
 
 /* projects , add and remove as needed for future , *see html note* */
 .projects {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     align-content: space-between;
-}
-
-.liveprojects {
     background-image: url(./images/background1.png);
     background-position: center;
     background-size: cover;
 }
 .projects h2 {
     margin-bottom: 5rem;
-    align-items: center;
-    justify-content: center;
 }
-
 .pcontainer {
-    display: flex;
     display: grid;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    gap: 2.5rem;
 }
-
 .pcontainer .projectbox {
     display: flex;
     position: relative;
     overflow: hidden;
     border-radius: 0;
-    box-shadow: 0 0 30px var(---main-color);
 }
-
 .projectbox img {
     width: 100%;
-    transition: 4s ease;
+    transition: 2s ease;
 }
-
 .projectbox:hover img {
     transform: scale(1.1);
 }
-
 .projectbox .player {
     position: absolute;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction:row;
     width: 100%;
     height: 100%;
+    bottom: 0;
     left: 0;
-    right: 0;
-    background: linear-gradient(rgba(0, 0, 0, 1), var(---main-color));
+    background: linear-gradient(rgba(0, 0, 0, 1), #3186af ,#000000,#3186af );
     align-items: center;
     text-align: center;
     padding: 0 5rem;
     transform: translateY(100%);
     transition: 4s ease;
-}
+    
 
+}
 .projectbox:hover .player {
     transform: translateY(0);
 }
-
 .player h4 {
     font-size: 2.5rem;
 }
-
 .player p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
-
 .player a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 4rem;
     height: 4rem;
-    border-radius: 50%;
+    border-radius: 0%;
     background: var(--text-color);
 }
-
 .player a i {
     font-size: 2rem;
     color: var(---main-color);
@@ -342,7 +306,6 @@ span {
 .contact h2 {
     margin-bottom: 3rem;
 }
-
 .csocials a {
     display: inline-flex;
     align-items: center;
@@ -357,26 +320,22 @@ span {
     margin: 3rem 2rem 3rem 0;
     transition: 3s ease;
 }
-
 .csocials a:hover {
     color: var(---first-bg-color);
     background: var(---main-color);
     box-shadow: 0 0 30px var(--main-color);
 }
-
 .contact form {
     max-width: 80rem;
     margin: auto;
     margin-bottom: auto;
     text-align: center;
 }
-
 .contact form .messagebox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .contact form .messagebox input,
 .contact form textarea {
     width: 100%;
@@ -386,14 +345,16 @@ span {
     color: var(--text-color);
     background: var(---main-color);
 }
-
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
 }
 
+
+
+
 /* footer , add icons ? cat ? */
-.footer {
+footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -403,10 +364,7 @@ span {
     box-shadow: 0 0 30px var(---main-color);
     border: 3px solid var(---main-color);
 }
-
 .footertext p {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     padding: 10px;
