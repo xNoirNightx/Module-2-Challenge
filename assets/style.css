@@ -13,7 +13,7 @@
 
 
 
-/* learning to save root content with var options  **NOTE** find better font */
+/* learning to save root content with var options *NOTE* works very well */
 :root {
     --bg-color: #000000;
     ---first-bg-color: #333233;
@@ -29,8 +29,8 @@ body {
     color: var(--text-color);
 }
 section {
-    /* min-height: 70vh; */
-    padding: 5rem 10% 2rem;
+    /* min-height: 50vh; <<<< breaks projects (why?) */
+    padding: 2rem 10% 2rem;
 }
 .header {
     display: flex;
@@ -46,7 +46,7 @@ section {
 
 
 
-/* nav bar content **NOTE** text colour isnt working from root  */
+/* nav bar content *NOTE* would like to make it more fancy one day  */
 .logo {
     font-size: 5rem;
     font-weight: 700;
@@ -108,7 +108,7 @@ span {
 
 
 
-/* free icons from fontawesome ***NOTE** images arnt linking ? */
+/* free icons from fontawesome **NOTE** make social accounts for DEV */
 .socials a {
     display: inline-flex;
     align-items: center;
@@ -175,6 +175,7 @@ span {
     background: var(--bg-color);
 }
 .aboutmetext h3 {
+    text-align: center;
     font-size: 3.5rem;
     background: var(--bg-color);
 }
@@ -186,8 +187,7 @@ span {
 
 
 
-/* skills NOTE combine coding to one box , add extra content after course 
- ERROR - fixed boxes stacked , now need row ??? */
+/* Skills ( condense/add more )  **ERROR** boxes should be side by side , not working */
 .skills h2 {
     margin-bottom: 5rem;
 }
@@ -199,7 +199,6 @@ span {
     box-shadow: 0 0 30px var(---main-color);
     background: var(---main-color);
     margin: 35px;
-
 }
 .container .skillbox {
     flex: 1 1 3rem;
