@@ -48,6 +48,10 @@ The following image shows the web application after I edited the code.
 
 > **Note**: This layout image is screen shot from a desktop computers web browser. It displays differently vs on Vscode.
 
+Phone screen capture ( Samsung S23 Ultra )
+
+![Corals Portfolio.](./assets/images/coralsphone1.png)
+![Corals Portfolio.](./assets/images/coralsphone2.png)
 
 ## Credits
 
