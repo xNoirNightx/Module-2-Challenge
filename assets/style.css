@@ -395,10 +395,7 @@ footer {
 }
 
 
-/*Device Screen Sizes */
-
-@media screen and (min-width: 600px) {}
-
-@media screen and (min-width: 768px) {}
-
+/*Device Screen Sizes **ERROR** cant add or it breaks webpage, will have to update in the future , I can view it on my cell phone no issue*/
 @media screen and (max-width: 992px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 600px) {}
